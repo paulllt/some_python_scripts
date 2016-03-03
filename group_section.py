@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+#Author: Paul Louie L. Tito
+#Date: March 3, 2016
+#Purpose: Group students by 5 members
 
 import random
 
