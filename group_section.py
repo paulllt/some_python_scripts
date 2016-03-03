@@ -74,8 +74,15 @@ def Bsit3a():
 
     grp_bsit3a = [group for group in GrouperA(rand_bsit3a, 5)]
 
-    for i in grp_bsit3a:
-        print `i` + "\n"
+    count = 0
+    grp_num = 1
+    while count < len(grp_bsit3a):
+        print "GROUP " + `grp_num`
+        for i in grp_bsit3a[count]:
+            print i
+        count += 1
+        grp_num += 1
+        print ""
 
 def Bsit3b():
     random.shuffle(bsit3b)
@@ -86,8 +93,16 @@ def Bsit3b():
 
     grp_bsit3b = [group for group in GrouperB(rand_bsit3b, 5)]
 
-    for i in grp_bsit3b:
-        print `i` + "\n"
+    count = 0
+    grp_num = 1
+    while count < len(grp_bsit3b):
+        print "GROUP " + `grp_num`
+        for i in grp_bsit3b[count]:
+            print i
+        count += 1
+        grp_num += 1
+        print ""    
 
-##Bsit3a()
-Bsit3b()
+if __name__ == '__main__':
+    Bsit3a()
+##    Bsit3b()
